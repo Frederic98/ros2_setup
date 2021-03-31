@@ -38,4 +38,10 @@ class Ros2Setup:
         """Get the value of an attribute of the specified tag"""
         return cls._get_element(tag).get(name)
 
-
+    @classmethod
+    def readme(cls, filetype='md'):
+        """Get the contents of the README file.
+        filetype can be one of ['md', 'rst', 'txt'], and should be the file extension of the README file"""
+        readme_fn = os.path.join(os.path.dirname(cls._get_caller_fn()), 'README.'+filetype)
+        with open(readme_fn, "r", encoding="utf-8") as f:
+            return f.read()

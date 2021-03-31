@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="ros2setup",
-    version="1.0",
+    version="1.1",
     author="Frederic",
     description="Python library for the ROS2 module setup",
     long_description=long_description,
