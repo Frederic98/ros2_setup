@@ -8,6 +8,7 @@ This way, only the _package.xml_ file has to be edited, to prevent having the tw
 Either install with `pip install ros2setup`, or copy _ros2setup.py_ next to your _setup.py_ so that it is accessible from there.
 
 ## Usage
+In the _setup.py_ file of your ROS2 package, change the hardcoded information to a call to Ros2Setup to pull the data from the XML file.
 ```python
 from setuptools import setup
 from ros2setup import Ros2Setup
